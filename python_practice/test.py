@@ -1,3 +1,4 @@
-a="life is short, you need python"
-b="123456789"
-print(b[::-1])
+try:
+    4/0
+except ZeroDivisionError as e:
+    print(e)
