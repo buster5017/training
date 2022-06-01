@@ -1,4 +1,8 @@
+f =open("foo.txt","w")
 try:
-    4/0
-except ZeroDivisionError as e:
+    data =f.read()
+    print(data)
+except Exception as e:
     print(e)
+finally:
+    f.close()
