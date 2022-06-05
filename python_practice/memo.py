@@ -1,0 +1,21 @@
+import sys
+option=sys.argv[1]
+memo=sys.argv[2]
+
+if option == "-a":
+    f = open("memo.txt","a")
+    f.write(memo)
+    f.write("\n")
+    f.close()
+elif option == "-v":
+    f = open("memo.txt")
+    memo = f.read()
+    f.close()
+    print(memo)
+elif option is None:
+    print("please enter the option")
+
+try :
+    memo is None
+except :
+    pass
